@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFE - Walk In Offline, Reward Online</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(120deg, #63e8a2 0%, #30b7ac 100%);
+        }
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .qr-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(49, 196, 141, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(49, 196, 141, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(49, 196, 141, 0);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white">
+        <div class="container mx-auto px-4 py-5 flex items-center justify-between">
+            <div class="flex items-center">
+                <div class="w-10 h-10 mr-2">
+                    <img src="logo_life.jpg" alt="lifelogo">
+                </div>
+                <h1 class="text-2xl font-medium text-gray-700">Life</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#how-it-works" class="text-gray-600 hover:text-gray-900 transition-colors">How It Works</a>
+                <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-colors">Benefits</a>
+                <a href="#roadmap" class="text-gray-600 hover:text-gray-900 transition-colors">Roadmap</a>
+                <a href="#partners" class="text-gray-600 hover:text-gray-900 transition-colors">Partners</a>
+            </nav>
+            <div class="flex items-center">
+                <a href="#download" class="bg-green-500 text-white px-5 py-2 rounded-md hover:bg-green-600 transition-colors text-sm font-medium">Get Started</a>
+                <a href="#partners" class="ml-3 bg-yellow-400 text-gray-800 px-5 py-2 rounded-md hover:bg-yellow-500 transition-colors text-sm font-medium">For Business</a>
+                <button class="ml-4 block md:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-50 py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-700">Walk In Offline<br>Reward Online</h2>
+                <p class="text-xl mb-8 text-gray-600">The Line Mini App that bridges the gap between digital users and physical world. Transform every store visit into an instantly rewarding experience.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <div class="relative group">
+                        <a href="#download" class="bg-green-500 text-white px-8 py-3 rounded-md font-medium hover:bg-green-600 transition-colors text-center cursor-not-allowed opacity-90 block">Get Mini App</a>
+                        <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-gray-800 text-white text-sm rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                            Coming soon!
+                        </div>
+                    </div>
+                    <a href="#partners" class="bg-yellow-400 text-gray-800 px-8 py-3 rounded-md font-medium hover:bg-yellow-500 transition-colors text-center">For Businesses</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is LIFE Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 order-2 md:order-1">
+                    <img src="Frame 22.png" alt="Screenshot_1"/>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2">
+                    <h2 class="text-3xl font-medium text-gray-700 mb-6">What is LIFE?</h2>
+                    <p class="text-lg text-gray-600 mb-8">A Line Mini App that bridges the gap between digital users and the physical world.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-500 rounded-md flex items-center justify-center mr-4">
+                                <i class="fas fa-globe text-xl text-yellow-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-medium mb-2 text-gray-700">Digital-Physical Bridge</h3>
+                                <p class="text-gray-600">Connect your online presence with offline experiences seamlessly.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-yellow-400 rounded-md flex items-center justify-center mr-4">
+                                <i class="fas fa-qrcode text-xl text-green-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-medium mb-2 text-gray-700">Contactless Rewards</h3>
+                                <p class="text-gray-600">Instantly deliver rewards through simple QR code scans.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-500 rounded-md flex items-center justify-center mr-4">
+                                <i class="fas fa-chart-line text-xl text-yellow-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-medium mb-2 text-gray-700">Business Insights</h3>
+                                <p class="text-gray-600">Gain valuable analytics on customer engagement patterns.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">The Problem</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Businesses face significant challenges in connecting online engagement with offline experiences.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"> 
+                <div>
+                    <div class="mb-10">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-200 text-green-800 rounded-lg flex items-center justify-center text-xl font-bold mr-4">
+                                1
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-2">Digital-Physical Divide</h3>
+                                <p class="text-gray-600">Physical stores struggle to convert digital engagement into foot traffic and vice versa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-10">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-200 text-green-800 rounded-lg flex items-center justify-center text-xl font-bold mr-4">
+                                2
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-2">No Walk-in Incentive</h3>
+                                <p class="text-gray-600">Users lack incentives to visit stores beyond traditional discounts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-200 text-green-800 rounded-lg flex items-center justify-center text-xl font-bold mr-4">
+                                3
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-2">Inefficient Loyalty Programs</h3>
+                                <p class="text-gray-600">No simple, contactless reward mechanism for offline interactions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="Frame 23.png" alt="Screenshot_2"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="mb-16">
+                <h2 class="text-3xl font-medium text-gray-700 mb-4">How It Works</h2>
+                <p class="text-lg text-gray-600 max-w-3xl">A seamless experience that rewards every physical store visit.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-500 rounded-md flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-store text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-medium mb-3 text-gray-700">Check In</h3>
+                    <p class="text-gray-600">Users simply open the app when visiting physical locations.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-yellow-400 rounded-md flex items-center justify-center mx-auto mb-6 qr-animation">
+                        <i class="fas fa-qrcode text-3xl text-gray-800"></i>
+                    </div>
+                    <h3 class="text-xl font-medium mb-3 text-gray-700">Scan QR</h3>
+                    <p class="text-gray-600">Scan the in-store QR code displayed at the merchant location.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-500 rounded-md flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-gift text-3xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-medium mb-3 text-gray-700">Unlock Rewards</h3>
+                    <p class="text-gray-600">On-chain rewards are instantly credited to their account.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-yellow-400 rounded-md flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-ticket-alt text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-medium mb-3 text-gray-700">Easy Redemption</h3>
+                    <p class="text-gray-600">Users can redeem rewards directly through the app.</p>
+                </div>
+            </div>
+            <div class="mt-16 text-center">
+                <div class="relative inline-block group">
+                    <a href="#download" class="bg-green-500 text-white px-8 py-3 rounded-md font-medium hover:bg-green-600 transition-colors inline-block mr-4 cursor-not-allowed opacity-90">Start Collecting Rewards</a>
+                    <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-gray-800 text-white text-sm rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                        Coming soon!
+                    </div>
+                </div>
+                <a href="#partners" class="bg-yellow-400 text-gray-800 px-8 py-3 rounded-md font-medium hover:bg-yellow-500 transition-colors inline-block">For Businesses</a>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Key Benefits</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">LIFE offers significant advantages for both businesses and customers.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-store text-green-600 mr-3"></i>
+                        For Businesses
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <h4 class="text-xl font-bold mb-2">Increased Foot Traffic</h4>
+                            <p class="text-gray-600">Drive more customers to your physical locations with digital incentives.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <h4 class="text-xl font-bold mb-2">Enhanced Customer Loyalty</h4>
+                            <p class="text-gray-600">Build stronger relationships with customers through personalized rewards.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <h4 class="text-xl font-bold mb-2">Valuable Analytics</h4>
+                            <p class="text-gray-600">Gain insights into customer behavior and optimize your business strategy.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <h4 class="text-xl font-bold mb-2">Easy Implementation</h4>
+                            <p class="text-gray-600">Simple setup with minimal overhead and technical requirements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-user text-blue-600 mr-3"></i>
+                        For Customers
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <h4 class="text-xl font-bold mb-2">Instant Rewards</h4>
+                            <p class="text-gray-600">Receive immediate benefits simply by visiting physical locations.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <h4 class="text-xl font-bold mb-2">Contactless Experience</h4>
+                            <p class="text-gray-600">Enjoy a seamless, touch-free reward collection process.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <h4 class="text-xl font-bold mb-2">On-Chain Assets</h4>
+                            <p class="text-gray-600">Access to blockchain-based rewards that can be traded or redeemed.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <h4 class="text-xl font-bold mb-2">Discover New Places</h4>
+                            <p class="text-gray-600">Incentives to explore new businesses and physical locations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Roadmap</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Our journey to revolutionize the online-to-offline experience.</p>
+            </div>
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-green-200"></div>
+                
+                <!-- Timeline Items -->
+                <div class="space-y-20">
+                    <!-- Item 1 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-16 md:text-right">
+                            <h3 class="text-2xl font-bold text-green-600 mb-2">March 2025</h3>
+                            <h4 class="text-xl font-bold mb-3">MVP Launch</h4>
+                            <p class="text-gray-600">Initial release on Line Dapp Portal with core functionality.</p>
+                        </div>
+                        <div class="hidden md:block w-12 h-12 bg-green-500 rounded-full border-4 border-white shadow-lg z-10 mx-6"></div>
+                        <div class="md:w-1/2 md:pl-16 mt-6 md:mt-0"></div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-16 hidden md:block"></div>
+                        <div class="hidden md:block w-12 h-12 bg-green-500 rounded-full border-4 border-white shadow-lg z-10 mx-6"></div>
+                        <div class="md:w-1/2 md:pl-16 md:text-left">
+                            <h3 class="text-2xl font-bold text-green-600 mb-2">April 2025</h3>
+                            <h4 class="text-xl font-bold mb-3">Beta Launch & Pilot</h4>
+                            <p class="text-gray-600">Testing with early partners and refining the platform.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-16 md:text-right">
+                            <h3 class="text-2xl font-bold text-green-600 mb-2">Q2 2025</h3>
+                            <h4 class="text-xl font-bold mb-3">NFT/SBT-based Gift Redemption</h4>
+                            <p class="text-gray-600">Implementing blockchain-based rewards to drive user retention.</p>
+                        </div>
+                        <div class="hidden md:block w-12 h-12 bg-green-500 rounded-full border-4 border-white shadow-lg z-10 mx-6"></div>
+                        <div class="md:w-1/2 md:pl-16 mt-6 md:mt-0"></div>
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-16 hidden md:block"></div>
+                        <div class="hidden md:block w-12 h-12 bg-green-500 rounded-full border-4 border-white shadow-lg z-10 mx-6"></div>
+                        <div class="md:w-1/2 md:pl-16 md:text-left">
+                            <h3 class="text-2xl font-bold text-green-600 mb-2">Q3 2025</h3>
+                            <h4 class="text-xl font-bold mb-3">AI-driven Merchant Insights</h4>
+                            <p class="text-gray-600">Advanced analytics for targeted customer engagement.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 5 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-16 md:text-right">
+                            <h3 class="text-2xl font-bold text-green-600 mb-2">Q4 2025</h3>
+                            <h4 class="text-xl font-bold mb-3">Open API</h4>
+                            <p class="text-gray-600">Enabling third-party integrations to expand the ecosystem.</p>
+                        </div>
+                        <div class="hidden md:block w-12 h-12 bg-green-500 rounded-full border-4 border-white shadow-lg z-10 mx-6"></div>
+                        <div class="md:w-1/2 md:pl-16 mt-6 md:mt-0"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA/Download Section -->
+    <section id="download" class="py-20 bg-gradient-to-r from-green-500 to-green-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Get Started?</h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto">Join the revolution in offline-to-online engagement and start collecting rewards today.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-6 sm:space-y-0 sm:space-x-6">
+                <div class="relative group">
+                    <a href="#" class="bg-white text-green-600 px-8 py-4 rounded-md font-medium hover:bg-gray-100 transition-colors flex items-center cursor-not-allowed opacity-90">
+                        <i class="fab fa-line text-4xl mr-3"></i>
+                        <div class="text-left">
+                            <div class="text-sm">Get it on</div>
+                            <div class="text-xl font-bold">LINE</div>
+                        </div>
+                    </a>
+                    <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-gray-800 text-white text-sm rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                        Coming soon!
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="bg-yellow-400 text-gray-800 px-8 py-4 rounded-md font-medium hover:bg-yellow-500 transition-colors flex items-center cursor-not-allowed opacity-90">
+                        <i class="fab fa-app-store-ios text-4xl mr-3"></i>
+                        <div class="text-left">
+                            <div class="text-sm">Download on</div>
+                            <div class="text-xl font-bold">App Store</div>
+                        </div>
+                    </a>
+                    <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-gray-800 text-white text-sm rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                        Coming soon!
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="bg-white text-green-600 px-8 py-4 rounded-md font-medium hover:bg-gray-100 transition-colors flex items-center cursor-not-allowed opacity-90">
+                        <i class="fab fa-google-play text-4xl mr-3"></i>
+                        <div class="text-left">
+                            <div class="text-sm">Get it on</div>
+                            <div class="text-xl font-bold">Google Play</div>
+                        </div>
+                    </a>
+                    <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-gray-800 text-white text-sm rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                        Coming soon!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-medium text-gray-700 mb-4">Our Partners</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Join these forward-thinking convenience stores already using LIFE.</p>
+            </div>
+            <div class="mt-16 text-center">
+                <div class="relative inline-block group">
+                    <a class="border-2 border-green-600 text-green-600 px-10 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors inline-block cursor-not-allowed opacity-90">Become a Partner</a>
+                    <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-gray-800 text-white text-sm rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                        Coming soon!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Newsletter Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-2xl font-medium text-gray-700 mb-6">Stay Updated</h2>
+                <div class="flex flex-col md:flex-row gap-4">
+                    <input type="email" placeholder="Enter your email" class="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 flex-grow">
+                    <button class="bg-green-500 text-white px-6 py-3 rounded-md hover:bg-green-600 transition-colors">Subscribe</button>
+                </div>
+                <div class="mt-12 pt-8 border-t border-gray-200">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <div class="flex items-center mb-4 md:mb-0">
+                            <div class="w-10 h-10 mr-2">
+                                <img src="logo_life.jpg" alt="lifelogo">
+                            </div>
+                            <p class="text-gray-500 text-sm">© 2025 LIFE PTE.LTD. All rights reserved.</p>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://x.com/gmgnlife" class="text-gray-500 hover:text-gray-700">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://line.me/R/ti/p/@836ylvrd" class="text-gray-500 hover:text-gray-700">
+                                <i class="fab fa-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
